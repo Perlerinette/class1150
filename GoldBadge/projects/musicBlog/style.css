@@ -1,0 +1,32 @@
+html,
+body{
+    margin:0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background: linear-gradient(
+    133deg,
+    rgba(235, 217, 181, 1)0%,
+    rgba(236, 105, 165, 1)50%,
+    rgba(89, 232, 247, 1)100%
+    );
+}
+
+body{
+    width:80vw;
+    min-width: 800px;
+    margin: 0 auto; /*automatically deals with margins on the side*/
+    height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#3e7959;
+}
+
+p, li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#4d4b4b;
+}
