@@ -1,166 +1,167 @@
-/*
-.navbar{
-    width:100vw;
-    height:30px;
-    background-color: rebeccapurple;
-    color: white;
+body {
+  background: linear-gradient(
+    0deg,
+    rgb(128, 71, 94, 1) 0%,
+    rgba(52, 52, 74, 1) 100%
+  );
+  height: 100vh;
+  margin: 0;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-item {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px 20px;
+}
+
+#login {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  margin: 8%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+
+#login-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 300px;
+  padding: 10px 30px 30px 30px;
+  border-radius: 5px;
+}
+
+input {
+  margin: 10px;
+  border-radius: 2px;
+  border: none;
+  height: 30px;
+  width: 250px;
+}
+
+button {
+  background-color: rgba(204, 90, 113, 1);
+  color: white;
+  border: none;
+  height: 30px;
+  width: 250px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+/*My version...*/
+/* .navbar{
+  width:100vw;
+  height:30px;
+  background-color: rebeccapurple;
+  color: white;
 }
 
 .navbar ul{
-    position:fixed;
-    margin:0 ;
-    padding: 0;
-    top:0;
-    width:100%;
-    list-style-type: none; /*remove bullets from the list*//*
+  position:fixed;
+  margin:0 ;
+  padding: 0;
+  top:0;
+  width:100%;
+  list-style-type: none; 
 }
 
 .navbar li{
-    float:left;
+  float:left;
 }
 
 .navbar li a {
-    display: block;
-    color: white;
-    text-align:center;
-    padding:14px 16px;
-    text-decoration: none; /* remove the underlines*//*
+  display: block;
+  color: white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration: none; 
 }
 
 .content h1{
-    color:white;
-    text-align:center;
+  color:white;
+  text-align:center;
 }
 
-*/
-/*
+
+
 html,
 body{
-    margin:0;
-    padding: 0;
-    width:100vw;
-    height:100vh;
+  margin:0;
+  padding: 0;
+  width:100vw;
+  height:100vh;
 }
 
 
 
 body {
-    font-size: 10px;
-    background: linear-gradient(
-    0deg,
-    rgb(142, 81, 143)0%,
-    rgb(80, 29, 52)50%,
-    rgb(40, 44, 44)100%
-    );
+  font-size: 10px;
+  background: linear-gradient(
+  0deg,
+  rgb(142, 81, 143)0%,
+  rgb(80, 29, 52)50%,
+  rgb(40, 44, 44)100%
+  );
 }
 
 .navbar{  
-    background-color:  rgba(255, 255, 255, 0.15);
-    height:40px;
+  background-color:  rgba(255, 255, 255, 0.15);
+  height:40px;
 }
 
 .content{
-    text-align: center;
-    color:white;
-    position:relative;
-    top:150px;
+  text-align: center;
+  color:white;
+  position:relative;
+  top:150px;
 
 }
 
 .form{
-    display:inline-block;
-    border: 2px solid grey;
-    background-color: grey;
+  display:inline-block;
+  border: 2px solid grey;
+  background-color: grey;
 }
 
 
 
 .navbar li{
-    display:inline;
-    padding-right:0.9em;
-    padding-left: 0.9em;
+  display:inline;
+  padding-right:0.9em;
+  padding-left: 0.9em;
 }
 
 .navbar li a{
-    text-decoration:none;
-    color:white;
-}*/
-
-body {
-    background: linear-gradient(
-      0deg,
-      rgb(128, 71, 94, 1) 0%,
-      rgba(52, 52, 74, 1) 100%
-    );
-    height: 100vh;
-    margin: 0;
-  }
-  ​
-  #navbar {
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-  ​
-  .nav-item {
-    color: white;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin: 10px 20px;
-  }
-  ​
-  #login {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  ​
-  h1 {
-    color: white;
-    margin: 8%;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 3em;
-  }
-  ​
-  h3 {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: white;
-    font-size: 1.5em;
-  }
-  ​
-  #login-bg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.15);
-    width: 300px;
-    padding: 10px 30px 30px 30px;
-    border-radius: 5px;
-  }
-  ​
-  input {
-    margin: 10px;
-    border-radius: 2px;
-    border: none;
-    height: 30px;
-    width: 250px;
-  }
-  ​
-  button {
-    background-color: rgba(204, 90, 113, 1);
-    color: white;
-    border: none;
-    height: 30px;
-    width: 250px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: large;
-    font-weight: bolder;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
+  text-decoration:none;
+  color:white;
+} */
