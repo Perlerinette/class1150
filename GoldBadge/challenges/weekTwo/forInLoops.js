@@ -38,40 +38,46 @@
 
 */
 
-// let fellowshipOfTheRing = {
-//     members: {
-//         Gandalf: 'Staff',
-//         Frodo: 'Sting',
-//         Sam: 'Lembas Bread',
-//         Aragorn: 'Anduril',
-//         Legolas: 'Bow of the Galadhrim',
-//         Gimli: 'Walking Axe',
-//         Pippin: 'Barrow Blades',
-//         Merry: 'Barrow Blades',
-//         Boromir: 'Horn of Gondor'
-//     },
-//     purpose: "To take the One Ring to Mordor, where it is to be \"cast into the fiery chasm from whence it came,\" in order for it to be destroyed and Sauron\'s power to come to an end.",
-//     formed: '25 October, 3018',
-//     dissolved: '26 February, 3019'
-// }
 
-let myFavoriteMovie = {
-    nameOfMovie:'The Notebook',
-    runTime: 120,
-    characters: [ {
-            name:'Allie' ,
-            age:20 , 
-            items: ['dog', 'house']} , 
-        {
-          name: 'Noah', 
-          age:22 , 
-          items: ['wood', 'letter']}
-        ],
-    genre: 'drama'
-  }
-  
-console.log(myFavoriteMovie.nameOfMovie);
-console.log(myFavoriteMovie.runTime);
-console.log(myFavoriteMovie.characters);
-console.log(myFavoriteMovie.characters[0].name);
-console.log(myFavoriteMovie.characters[0].items[1]);
+let fellowshipOfTheRing = {
+    members: {
+        Gandalf: 'Staff',
+        Frodo: 'Sting',
+        Sam: 'Lembas Bread',
+        Aragorn: 'Anduril',
+        Legolas: 'Bow of the Galadhrim',
+        Gimli: 'Walking Axe',
+        Pippin: 'Barrow Blades',
+        Merry: 'Barrow Blades',
+        Boromir: 'Horn of Gondor'
+    },
+    purpose: "To take the One Ring to Mordor, where it is to be \"cast into the fiery chasm from whence it came,\" in order for it to be destroyed and Sauron\'s power to come to an end.",
+    formed: '25 October, 3018',
+    dissolved: '26 February, 3019'
+}
+
+//BRONZE
+for (member in fellowshipOfTheRing.members){
+    console.log(member);
+}
+
+//SILVER
+for (member in fellowshipOfTheRing.members){
+    console.log(member);
+    if(member[0] === 'A' || member[0] === 'E' || member[0] === 'I' || member[0] === 'O' || member[0] === 'U'){
+        console.log(`${member} starts with a vowel`);
+    } else {
+        console.log(`${member} does not start with a vowel`);
+    }
+}
+
+//GOLD
+let arr = [];
+for (member in fellowshipOfTheRing.members){
+    console.log(member);
+    if(member[0] === 'A' || member[0] === 'E' || member[0] === 'I' || member[0] === 'O' || member[0] === 'U'){
+    } else {
+        arr.push(member);
+    }
+}
+console.log(arr);
