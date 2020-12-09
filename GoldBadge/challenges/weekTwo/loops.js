@@ -39,6 +39,7 @@ var arr = [];
 //     } 
 // }
 
-for(i = 0; i<alphabet.length; i++){
-    i%2 == 0 ? (arr.push(alphabet[i]), console.log(arr)) : console.log('the index is an odd number');
-}
+// for(i = 0; i<alphabet.length; i++){
+//     i%2 == 0 ? (arr.push(alphabet[i]), console.log(arr)) : console.log('the index is an odd number');
+// }
+
